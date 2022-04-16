@@ -1,5 +1,4 @@
-
-        body {
+body {
           background: linear-gradient(30deg, #00B5C2, #879B9C, #00E209);
           background-size: 600% 600%;
           animation: GradientBackground 8s ease infinite;
@@ -18,8 +17,6 @@
             background-position: 0% 50%;
           }
         };
-      
-
 *{box-sizing: border-box;}
 
 ul.gnav-navi-1{
