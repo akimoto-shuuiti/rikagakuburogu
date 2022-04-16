@@ -1,3 +1,24 @@
+/* 背景カラーが変化 */
+.colorchange_bg {
+  height: 250px;
+  margin: 30px 0;
+  animation: colorchange-color 10s infinite;
+}
+
+@keyframes colorchange-color {
+  0%, 100% {
+    background-color: #6bb6ff;
+  }
+  25% {
+    background-color: #1abc9c;
+  }
+  50% {
+    background-color: #9b59b6;
+  }
+  75% {
+    background-color: #85e3ec;
+  }
+}
 body {
           background: linear-gradient(30deg, #00B5C2, #879B9C, #00E209);
           background-size: 600% 600%;
@@ -129,28 +150,7 @@ header {
   background-image: url(FF15borm.github.io/6463136F-66C2-4D68-B3B9-894609E74994.png) ;
   background-repeat: no-repeat;
   width: 700px;
-}
-/* 背景画像の繰り返し表示をしない */
-body{
-  background:gray;/*保険用*/
-  background: -moz-linear-gradient(top,lightblue 0%,gray 100%);/*古いFireFox向け*/
-  background: -webkit-linear-gradient(top,lightblue 0%,gray 100%);/*古いSafariなど向け*/
-  filter:progid:DXImageTransform.Microsoft.Gradient(
-    startColorstr='lightblue',
-    endColorstr='gray',
-    GradientType=0 );/*IE9以下向け*/
-  background: linear-gradient(to bottom,lightblue 0%,gray 100%);/*正規の指定*/
-} 
-
-h1 {
-    color:#bce2e8;
- }
-   header {
-  width: 1000px;
-  height: 500px;
-  background-image: url(FF15borm.github.io/6463136F-66C2-4D68-B3B9-894609E74994.png) ;
-} 
-    
+}   
 .box {
   border-left: 5px double skyblue;
   border-right: 5px double skyblue;
