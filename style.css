@@ -17,6 +17,13 @@ body {
             background-position: 0% 50%;
           }
         };
+.test {
+
+  background-color: blue;
+  background: linear-gradient(130deg, #5EFCE8 30%, #736EFE);
+  background: -moz-linear-gradient(130deg, #5EFCE8 30%, #736EFE);
+  background: -webkit-linear-gradient(130deg, #5EFCE8 30%, #736EFE);
+}
 *{box-sizing: border-box;}
 
 ul.gnav-navi-1{
