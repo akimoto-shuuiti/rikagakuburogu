@@ -18,7 +18,37 @@
             background-position: 0% 50%;
           }
         };
-         
+      #container {
+	position: relative;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #000;
+	overflow: hidden;
+} 
+@keyframes ripples_anim {
+	0% {
+		opacity: 1;
+	}
+	
+	50% {		
+		transform: translate(-200px,-200px);
+		width: 400px;
+		height: 400px;
+		opacity: 0;
+	}
+}
+.ripples div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: solid 2px #FFF;
+	border-radius: 50%;
+	opacity: 0;
+	animation: ripples_anim 1.2s linear infinite;
+}
 .test {
 
   background-color: blue;
