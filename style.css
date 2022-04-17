@@ -26,24 +26,6 @@
 	background: #000;
 	overflow: hidden;
 } 
-.container{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  position:relative;
-  width: 100%;
-  height:200px;
-  background:#0c0c33;
-  overflow: hidden;
-}
-
-.container p{
-  padding:20px;
-  margin:0;
-  font-size:40px;
-  font-weight: bold;
-  color:#FFF;
-}
 
 .rains{
   position: absolute;
