@@ -1,7 +1,7 @@
-
+ 
         body {
-          background: linear-gradient(30deg, #0068E6, #044DA5, #94F102A1);
-          background-size: 600% 600%;
+          background: linear-gradient(30deg, #D42222, #D48722, #82D422, #22D46C, #227ED4, #6A22D4, #D42222, #D42222, #D42222);
+          background-size: 1800% 1800%;
           animation: GradientBackground 8s ease infinite;
         }
 
@@ -18,7 +18,7 @@
             background-position: 0% 50%;
           }
         };
-      
+         
 .test {
 
   background-color: blue;
