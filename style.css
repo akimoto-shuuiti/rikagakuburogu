@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.title {
+  display: flex;
+  overflow: hidden;
+  color: #aa8f7b;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.title span {
+  display: block;
+  transform: translate(0, 105%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.title.-visible span {
+  transform: translate(0, 0);
+}
 @import "compass/css3";
 
 $width:  220px;
