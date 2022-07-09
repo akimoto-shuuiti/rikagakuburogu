@@ -1,0 +1,170 @@
+/*
+ * これは全てのページに適用する CSS だよ！
+ * Internet Explorer などの古いブラウザーはサポートしないよ。
+ */
+
+/* 外部の CSS ここから */
+
+/* sanitize.css (ブラウザごとの表示の違いを減らしていい感じにくれる) */
+@import url("https://unpkg.com/sanitize.css");
+@import url("https://unpkg.com/sanitize.css/forms.css");
+@import url("https://unpkg.com/sanitize.css/assets.css");
+@import url("https://unpkg.com/sanitize.css/typography.css");
+@import url("https://unpkg.com/sanitize.css/system-ui.css");
+@import url("https://unpkg.com/sanitize.css/ui-monospace.css");
+
+/* 外部の CSS ここまで */
+/* 自分の CSS ここから */
+
+/*
+ * +------------+
+ * | CSS の心得 |
+ * +------------+
+ *
+ * [余白について]
+ * Web デザインにおいて余白はめちゃくちゃ重要だよ！
+ * 余白がないギッチギチなレイアウトは避けるべきってこと。
+ *
+ * [色について]
+ * Web デザインでは色は極端色を使わず、穏やかな色を使うべきとされているよ！
+ * 例えば、 #000000 や #ffffff の代わりに #333333 や #eeeeee を使うってこと。
+ */
+
+/* 水色ボックス */
+.sky-box {
+  width: 100%;
+  border-left: 5px double #91cae1;
+  border-right: 5px double #91cae1;
+  /* Flexbox ここから (margin の相殺で余白が外に逃げてしまうのを防ぐため) */
+  display: flex;
+  flex-direction: column;
+  /* Flexbox ここまで */
+  background-color: #dddddd;
+  box-shadow: 0 0 10px 5px rgba(51, 51, 51, 0.25);
+}
+
+/* ページ全体 */
+body {
+  min-height: 100vh; /* 100vh はブラウザの画面の高さ */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* Flexbox ここから */
+  display: flex;
+  flex-direction: column;
+  /* Flexbox ここまで */
+  color: #333333;
+  background-color: #eeeeee;
+}
+
+/* ヘッダー */
+body header {
+  position: sticky; /* 画面に貼り付け */
+  width: 100%;
+  top: 0;
+  padding: 30px;
+  /* Flexbox ここから */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* Flexbox ここまで */
+  z-index: 10; /* 浮かせる */
+  background-color: #8dc21f;
+  box-shadow: 0 0 10px 5px rgba(51, 51, 51, 0.25);
+}
+
+/* ヘッダー内のタイトル */
+body header .title {
+  height: 100%;
+  min-width: fit-content;
+  flex: 1; /* 横にできるだけ伸ばす */
+  color: #dddddd;
+  text-decoration: none;
+  filter: drop-shadow(0 0 5px rgba(51, 51, 51, 0.25));
+}
+/* タイトルにカーソルを合わせた時 */
+body header .title:hover {
+  text-decoration: underline;
+}
+
+/* ヘッダー内のタイトル内のテキスト */
+body header .title h1 {
+  margin: 0;
+}
+
+/* ヘッダー内のメニュー */
+body header nav {
+  height: 100%;
+  /* Flexbox ここから */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 0;
+  /* Flexbox ここまで */
+}
+
+/* ヘッダー内のメニュー内のリンク */
+body header nav a {
+  border-left: 2px solid;
+  padding: 5px 15px;
+  color: inherit;
+  text-decoration: none;
+}
+/* リンクにカーソルを合わせた時 */
+body header nav a:hover {
+  text-decoration: underline;
+}
+
+/* メインコンテンツ */
+body main {
+  flex: 1; /* 画面が大きかった時もフッターを最下部に配置するため */
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+/* メインコンテンツ内のボックス内の記事 */
+body main article {
+  margin: 30px;
+}
+
+/* メインコンテンツ内のコメントボックス */
+body main .comment-box {
+  position: relative;
+  min-height: 400px;
+}
+
+/* フッター */
+body footer {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-top: 2px solid #333333;
+  padding: 30px;
+  /* Flexbox ここから */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* Flexbox ここまで */
+}
+
+/* アクセスカウンター */
+body footer .counter {
+  width: fit-content;
+  margin: 15px;
+  text-align: right;
+  color: #dddddd;
+  /*
+   * #000000 はデザイン上あまり良くないけど、
+   * アクセスカウンターの背景の色が #000000 なのでそれに合わせてるよ。
+   */
+  background-color: #000000;
+  box-shadow: 0 0 15px 15px #000000;
+}
+
+/* 自分の CSS ここまで */

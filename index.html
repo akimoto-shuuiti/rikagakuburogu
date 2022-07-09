@@ -2,7 +2,14 @@
 <html lang="ja">
   <!-- ページの設定 -->
   <head>
-    <meta charset="UTF-8" />
+    <!-- メタ設定 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="横須賀学院中学理科学部のサブサイト" />
+    <meta name="theme-color" content="#8dc21f" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#8dc21f" />
+
+    <!-- タイトル -->
     <title>理科学部の掲示板</title>
 
     <!-- CSS -->
@@ -74,7 +81,9 @@
   <body>
     <!-- ヘッダー -->
     <header>
-      <div><h1>理科学部サイト2ちゃん</h1></div>
+      <a href="./" class="title">
+        <h1>理科学部サイト2ちゃん</h1>
+      </a>
       <nav>
         <a href="https://akimoto-shuuiti.github.io/rikagakuburogu/">
           旧理科学部
@@ -93,46 +102,60 @@
 
     <!-- メインコンテンツ -->
     <main>
-      <article>
-        <h2>理科学部のサブサイトです</h2>
+      <div class="sky-box">
+        <article>
+          <h2>理科学部のサブサイトです</h2>
 
-        <div>
-          ここでコメントする時はネットの常識的なルールに則ってコメントしましょう！
-        </div>
-        <p>↓下にスクロールするとコメントできます。</p>
+          <p class="warning">
+            ここでコメントする時はネットの常識的なルールに則ってコメントしましょう！
+          </p>
 
-        <!-- コメントボックス -->
-        <div>
-          <!-- begin wwww.htmlcommentbox.com -->
-          <div id="HCB_comment_box">
-            <a href="http://www.htmlcommentbox.com">Comment Box</a> is loading
-            comments...
+          <!-- コメントボックス -->
+          <div class="comment-box">
+            <!-- begin www.htmlcommentbox.com -->
+            <div id="HCB_comment_box">
+              <a href="http://www.htmlcommentbox.com">Comment Box</a>
+              is loading comments...
+            </div>
+            <link
+              rel="stylesheet"
+              type="text/css"
+              href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0"
+            />
+            <!-- prettier-ignore -->
+            <script type="text/javascript" id="hcb">
+              if(!window.hcb_user)hcb_user={};((s)=>{s.setAttribute("type","text/javascript");s.setAttribute("src",`https://www.htmlcommentbox.com/jread?page=${encodeURIComponent(hcb_user.PAGE||(""+window.location).replace(/'/g,"%27")).replace("+","%2B")}&mod=%241%24wq1rdBcg%24YhRV5BUou%2FEtmtc.zFdGU0&opts=16798&num=10&ts=1652944925083`);document.getElementsByTagName("head")[0].appendChild(s)})(document.createElement("script"));
+            </script>
+            <!-- end www.htmlcommentbox.com -->
           </div>
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0"
-          />
-          <!-- prettier-ignore -->
-          <script type="text/javascript" id="hcb">
-            if(!window.hcb_user)hcb_user={};((s)=>{s.setAttribute("type","text/javascript");s.setAttribute("src",`https://www.htmlcommentbox.com/jread?page=${encodeURIComponent(hcb_user.PAGE||(""+window.location).replace(/'/g,"%27")).replace("+","%2B")}&mod=%241%24wq1rdBcg%24YhRV5BUou%2FEtmtc.zFdGU0&opts=16798&num=10&ts=1652944925083`);document.getElementsByTagName("head")[0].appendChild(s)})(document.createElement("script"))
-          </script>
-          <!-- end www.htmlcommentbox.com -->
-        </div>
-      </article>
+        </article>
+      </div>
+      <!-- /.sky-box -->
     </main>
 
-    <!-- アクセスカウンタ -->
-    <div>
-      <p>ページ何人見たかわかるやーつ⬇</p>
-      <!-- hitwebcounter Code START -->
-      <a href="https://www.hitwebcounter.com" target="_blank">
-        <img
-          src="https://hitwebcounter.com/counter/counter.php?page=7987953&style=0010&nbdigits=5&type=page&initCount=0"
-          title="Free Counter"
-          alt="web counter"
-          border="0"
-      /></a>
-    </div>
+    <!-- フッター -->
+    <footer>
+      <!-- 著作権表示 -->
+      <small>© 2022 横須賀学院中学理科学部</small>
+      <!-- アクセスカウンタ -->
+      <div class="counter">
+        <span>ページ何人見たかわかるやーつ⬇</span>
+        <br />
+        <!-- hitwebcounter Code START -->
+        <a
+          href="https://www.hitwebcounter.com"
+          target="_blank"
+          id="hitwebcounter"
+        >
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=7987953&style=0010&nbdigits=5&type=page&initCount=0"
+            title="Free Counter"
+            alt="web counter"
+            border="0"
+          />
+        </a>
+        <!-- hitwebcounter Code END -->
+      </div>
+    </footer>
   </body>
 </html>
