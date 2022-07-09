@@ -43,6 +43,17 @@
   box-shadow: 0 0 10px 5px rgba(51, 51, 51, 0.25);
 }
 
+/* ゲーミング背景 */
+.gaming {
+  background: linear-gradient(to left, #ee7777, #eeee77, #77ee77, #77eeee, #7777ee, #ee77ee, #ee7777) 0 center/1200%;
+  animation: gaming 150s linear infinite;
+}
+@keyframes gaming {
+  100% {
+    background-position-x: 1200%;
+  }
+}
+
 /* ページ全体 */
 body {
   min-height: 100vh; /* 100vh はブラウザの画面の高さ */
