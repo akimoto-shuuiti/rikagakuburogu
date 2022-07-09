@@ -45,7 +45,17 @@
 
 /* ゲーミング背景 */
 .gaming {
-  background: linear-gradient(to left, #ee7777, #eeee77, #77ee77, #77eeee, #7777ee, #ee77ee, #ee7777) 0 center/1200%;
+  background: linear-gradient(
+      to left,
+      #ee7777,
+      #eeee77,
+      #77ee77,
+      #77eeee,
+      #7777ee,
+      #ee77ee,
+      #ee7777
+    )
+    0 center/1200%;
   animation: gaming 150s linear infinite;
 }
 @keyframes gaming {
@@ -140,6 +150,15 @@ body main {
 /* メインコンテンツ内のボックス内の記事 */
 body main article {
   margin: 30px;
+}
+
+/* メインコンテンツ内のボックス内の記事内のタイトル */
+body main article h2 {
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 5px 30px;
+  color: #dddddd;
+  background-color: #dd8833;
 }
 
 /* メインコンテンツ内のコメントボックス */
