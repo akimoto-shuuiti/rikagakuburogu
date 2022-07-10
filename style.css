@@ -139,6 +139,32 @@ body header nav a:hover {
   text-decoration: underline;
 }
 
+/* ルール */
+body .rule {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto 0;
+  background-color: #eeeeee;
+}
+
+/* ルール内の画像 */
+body .rule img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ルールの内側の影 */
+body .rule::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 0 10px 5px rgba(51, 51, 51, 0.25);
+}
+
 /* メインコンテンツ */
 body main {
   flex: 1; /* 画面が大きかった時もフッターを最下部に配置するため */
