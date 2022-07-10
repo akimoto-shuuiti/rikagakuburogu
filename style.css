@@ -64,6 +64,34 @@
   }
 }
 
+/* 波打つ文字 */
+.wave {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.wave::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid;
+  display: block;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
+}
+.wave.wave-bar::after {
+  transform: translate(0, 0);
+}
+.wave span {
+  position: relative;
+  display: inline-block;
+  transform: translate(0, 105%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.wave.wave-up span {
+  transform: translate(0, 0);
+}
+
 /* ページ全体 */
 body {
   min-height: 100vh; /* 100vh はブラウザの画面の高さ */
