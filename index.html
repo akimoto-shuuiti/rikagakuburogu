@@ -120,7 +120,27 @@ font-family: 'Yomogi', sans-serif;
 
     <!-- メインコンテンツ -->
     <main>
-      <div class="sky-box">
+<style>
+.an2-fadeup {
+    background-color:#ff7f50;
+    font-size: 30px;
+    font-weight: bold;
+    animation-name: fadeup;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes fadeup {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+</style>
+   <p class="an2-fadeup"><div class="sky-box">
         <article>
           <h2>理科学部のサブサイトです</h2>
 
@@ -147,7 +167,7 @@ font-family: 'Yomogi', sans-serif;
             <!-- end www.htmlcommentbox.com -->
           </div>
         </article>
-      </div>
+      </div></p>
       <!-- /.sky-box -->
     </main>
 
