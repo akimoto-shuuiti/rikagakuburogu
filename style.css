@@ -8,6 +8,9 @@
 font-family: 'gokuhoso';
 src: url('rikagakuburogu/chogokubosogothic_5.ttf') format('truetype');
 }
+body {
+font-family: "gokuhoso" ;
+}
 /* sanitize.css (ブラウザごとの表示の違いを減らしていい感じにくれる) */
 @import url("https://unpkg.com/sanitize.css");
 @import url("https://unpkg.com/sanitize.css/forms.css");
